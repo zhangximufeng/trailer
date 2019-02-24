@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/zhangximufeng/trailer#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "koa": "^2.7.0",
+    "pug": "^2.0.3",
     "standard-version": "^5.0.0"
   },
   "devDependencies": {

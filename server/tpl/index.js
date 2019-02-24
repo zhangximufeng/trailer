@@ -1,6 +1,6 @@
 
-const normal = require('./normal.js')
-
 module.exports = {
-  normal
+  htmlTpl: require('./html'),
+  ejsTpl: require('./ejs'),
+  pugTpl: require('./pug')
 }
