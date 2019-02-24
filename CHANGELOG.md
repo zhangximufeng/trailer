@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.3.0](https://github.com/zhangximufeng/trailer/compare/v2.2.0...v2.3.0) (2019-02-24)
+
+
+### Features
+
+* 新增pug ejs 模板引擎 ([050733e](https://github.com/zhangximufeng/trailer/commit/050733e))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # [2.2.0](https://github.com/zhangximufeng/trailer/compare/v2.0.2...v2.2.0) (2019-02-24)
 
 
