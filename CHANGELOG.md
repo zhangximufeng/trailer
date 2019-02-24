@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.4.0](https://github.com/zhangximufeng/trailer/compare/v2.3.0...v2.4.0) (2019-02-24)
+
+
+### Features
+
+* 增加koa-views ([e9bd428](https://github.com/zhangximufeng/trailer/commit/e9bd428))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # [2.3.0](https://github.com/zhangximufeng/trailer/compare/v2.2.0...v2.3.0) (2019-02-24)
 
 
