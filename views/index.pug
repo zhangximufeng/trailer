@@ -4,10 +4,50 @@ block title
   title Koa 电影首页
 
 block content
-  .container
-        .row
-          .col-md-8
-            h1 Hi #{you}
-            p This is #{me}
-          .col-md-4
-            p 测试pug静态页面
+  include ./includes/header
+
+  .container-fluid
+    .sidebar
+      .collapse.cat-links
+        .sidebar-item.active
+          a.sidebar-link(href='/') Links
+          ul.nav.sidebar-inner
+            li.active.sidebar-inner-active
+              a(href='/') Links1
+            li.sidebar-inner-active
+              a(href='/') Links2
+    .content
+      .row
+        .col-md-6
+          .card
+            img.card-img-top(src='https://p0.ifengimg.com/2019_05/47611dd0-fcfd-4aa0-8bb8-43c2dce4ae8f_63E572968C52D603B212458EA28BA7E91F171DDA_w3158_h5000.jpg' data-video='http://vjs.zencdn.net/v/oceans.mp4')
+            .card-body
+              h4.card-title 这里是电影标题
+              p.card-desc 这是电影描述
+            .card-footer
+              small.text-muted 1 天前更新
+        .col-md-6
+          .card
+            img.card-img-top(src='https://p0.ifengimg.com/2019_05/47611dd0-fcfd-4aa0-8bb8-43c2dce4ae8f_63E572968C52D603B212458EA28BA7E91F171DDA_w3158_h5000.jpg' data-video='http://vjs.zencdn.net/v/oceans.mp4')
+            .card-body
+              h4.card-title 这里是电影标题
+              p.card-desc 这是电影描述
+            .card-footer
+              small.text-muted 1 天前更新
+      .row
+        .col-md-6
+          .card
+            img.card-img-top(src='https://p0.ifengimg.com/2019_05/47611dd0-fcfd-4aa0-8bb8-43c2dce4ae8f_63E572968C52D603B212458EA28BA7E91F171DDA_w3158_h5000.jpg' data-video='http://vjs.zencdn.net/v/oceans.mp4')
+            .card-body
+              h4.card-title 这里是电影标题
+              p.card-desc 这是电影描述
+            .card-footer
+              small.text-muted 1 天前更新
+        .col-md-6
+          .card
+            img.card-img-top(src='https://p0.ifengimg.com/2019_05/47611dd0-fcfd-4aa0-8bb8-43c2dce4ae8f_63E572968C52D603B212458EA28BA7E91F171DDA_w3158_h5000.jpg' data-video='http://vjs.zencdn.net/v/oceans.mp4')
+            .card-body
+              h4.card-title 这里是电影标题
+              p.card-desc 这是电影描述
+            .card-footer
+              small.text-muted 1 天前更新
