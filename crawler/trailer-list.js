@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer')
 
 const url = 'https://movie.douban.com/tag/#/?sort=U&range=6,10&tags='
 
-const sleep = time => new Promise((resolve => setTimeout(resolve, time))
+const sleep = time => new Promise((resolve => {setTimeout(resolve, time)}))
 
 
 
@@ -17,16 +17,16 @@ const sleep = time => new Promise((resolve => setTimeout(resolve, time))
 
   const page = await browser.newPage()
   await page.goto(url, {
-    waitUntil: 'networkidle'
+    waitUntil: 'networkidle2'
   })
 
   await sleep(3000)
 
-  await page.awaitForSelector('.more')
+  await page.waitForSelector('.more')
 
   for (let i = 0; i < 1; i++) {
     await sleep(3000)
-    await.page.click('.more')
+    await page.click('.more')
   }
 
   const result = await page.evaluate(() => {
@@ -36,7 +36,7 @@ const sleep = time => new Promise((resolve => setTimeout(resolve, time))
     var links = []
 
     if (items.length >= 1) {
-      item.each((index, item) => {
+      items.each((index, item) => {
         let it = $(item)
         let doubanId = it.find('div').data('id')
         let title = it.find('.title').text()

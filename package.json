@@ -33,6 +33,7 @@
     "koa-static": "^5.0.0",
     "koa-views": "^6.1.5",
     "pug": "^2.0.3",
+    "puppeteer": "^1.12.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "standard-version": "^5.0.0"
