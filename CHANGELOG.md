@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.8.0](https://github.com/zhangximufeng/trailer/compare/v2.7.0...v2.8.0) (2019-02-27)
+
+
+### Features
+
+* 爬取video,cover ([6a7691c](https://github.com/zhangximufeng/trailer/commit/6a7691c))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # [2.7.0](https://github.com/zhangximufeng/trailer/compare/v2.6.2...v2.7.0) (2019-02-27)
 
 
