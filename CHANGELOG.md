@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.7.0](https://github.com/zhangximufeng/trailer/compare/v2.6.2...v2.7.0) (2019-02-27)
+
+
+### Features
+
+* 增加 子进程处理爬虫 ([c0a1771](https://github.com/zhangximufeng/trailer/commit/c0a1771))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [2.6.2](https://github.com/zhangximufeng/trailer/compare/v2.6.0...v2.6.2) (2019-02-26)
 
 
