@@ -2,10 +2,7 @@ const puppeteer = require('puppeteer')
 
 const url = 'https://movie.douban.com/tag/#/?sort=U&range=6,10&tags='
 
-const sleep = time => new Promise((resolve => {setTimeout(resolve, time)}))
-
-
-
+const sleep = time => new Promise(resolve => { setTimeout(resolve, time) })
 
 ;(async () => {
   console.log('start visit the target page')
@@ -41,7 +38,7 @@ const sleep = time => new Promise((resolve => {setTimeout(resolve, time)}))
         let doubanId = it.find('div').data('id')
         let title = it.find('.title').text()
         let rate = Number(it.find('.rate').text())
-        let poster = it.find('img').attr('src').replace('s_ratio','l_ratio')
+        let poster = it.find('img').attr('src').replace('s_ratio', 'l_ratio')
 
         links.push({
           doubanId,
@@ -55,7 +52,6 @@ const sleep = time => new Promise((resolve => {setTimeout(resolve, time)}))
   })
   browser.close()
 
-  process.send({result})
+  process.send({ result })
   process.exit(0)
-
 })()

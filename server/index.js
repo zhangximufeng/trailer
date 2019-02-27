@@ -11,7 +11,6 @@ app.use(async (ctx, next) => {
     you: 'luke',
     me: 'zhangximufeng'
   })
-
 })
 
 app.listen(3000)
