@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.10.0](https://github.com/zhangximufeng/trailer/compare/v2.9.0...v2.10.0) (2019-03-04)
+
+
+### Features
+
+* 增加mongoose ([f1e29f6](https://github.com/zhangximufeng/trailer/commit/f1e29f6))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # [2.9.0](https://github.com/zhangximufeng/trailer/compare/v2.8.0...v2.9.0) (2019-02-28)
 
 
