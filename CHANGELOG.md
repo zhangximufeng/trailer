@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.11.0](https://github.com/zhangximufeng/trailer/compare/v2.10.0...v2.11.0) (2019-03-05)
+
+
+### Features
+
+* 爬取数据存储mongoose 请求api更新mongoose ([ba7c9a5](https://github.com/zhangximufeng/trailer/commit/ba7c9a5))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # [2.10.0](https://github.com/zhangximufeng/trailer/compare/v2.9.0...v2.10.0) (2019-03-04)
 
 
