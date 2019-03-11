@@ -1,8 +1,16 @@
 const cp = require('child_process')
-
+const mongoose = require('mongoose')
 const { resolve } = require('path')
+const Movie = mongoose.model('Movie')
+const Category = mongoose.model('Category')
 
 ;(async () => {
+  let movies = await Movie.find({
+    $or: [
+      { video: { $exists: true } },
+      { video: null }
+    ]
+  })
   const script = resolve(__dirname, '../../crawler/video.js')
   const child = cp.fork(script, [])
   let invoked = false
@@ -20,7 +28,39 @@ const { resolve } = require('path')
     let err = code === 0 ? null : new Error('exit code' + code)
     console.log(err)
   })
-  child.on('message', (data) => {
-    console.log(data)
+  child.on('message', async (data) => {
+    let doubanId = data.doubanId
+    let movie = await Movie.findOne({
+      doubanId
+    })
+
+    if (data.video) {
+      movie.video = data.video
+      movie.cover = data.cover
+
+      await movie.save()
+    } else {
+      await movie.remove()
+
+      let movieTypes = movie.movieTypes
+
+      for (let i = 0; i < movieTypes.length; i++) {
+        let type = movieTypes[i]
+
+        let cat = Category.findOne({
+          name: type
+        })
+        if (cat && cat.movies) {
+          let idx = cat.movies.indexOf(movie._id)
+          if (idx > -1) {
+            cat.movies = cat.movies.splice(idx, 1)
+          }
+
+          await cat.save()
+        }
+      }
+    }
   })
+
+  child.send(movies)
 })()

@@ -66,8 +66,6 @@ userSchema.pre('save', function (next) {
       next()
     })
   })
-
-  next()
 })
 
 userSchema.methods = {

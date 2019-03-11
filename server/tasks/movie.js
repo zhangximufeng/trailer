@@ -1,8 +1,8 @@
 const cp = require('child_process')
 const mongoose = require('mongoose')
-
-const { resolve } = require('path')
 const Movie = mongoose.model('Movie')
+const { resolve } = require('path')
+
 ;(async () => {
   const script = resolve(__dirname, '../../crawler/trailer-list.js')
   const child = cp.fork(script, [])
