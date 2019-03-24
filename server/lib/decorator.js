@@ -41,32 +41,32 @@ const router = conf => (target, key, descriptor) => {
 
 export const controller = path => target => (target.prototype[symbolPrefix] = path)
 
-export const get = path => router ({
+export const get = path => router({
   method: 'get',
   path
 })
 
-export const post = path => router ({
+export const post = path => router({
   method: 'post',
   path
 })
 
-export const put = path => router ({
+export const put = path => router({
   method: 'put',
   path
 })
 
-export const del = path => router ({
+export const del = path => router({
   method: 'del',
   path
 })
 
-export const use = path => router ({
+export const use = path => router({
   method: 'use',
   path
 })
 
-export const all = path => router ({
+export const all = path => router({
   method: 'all',
   path
 })
