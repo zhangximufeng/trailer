@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 const Movie = mongoose.model('Movie')
 
 export const getAllMovies = async (type, year) => {
-  console.log('*********!*******')
   let query = {}
 
   if (type) {

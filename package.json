@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./server/index.js",
-    "build": "rm -rf parcel/dist && parcel build parcel/index.html --no-cache -d parcel/dist --public-url /dist/",
+    "build": "rm -rf dist && parcel build src/index.html --no-cache -d dist --public-url /",
     "release": "standard-version"
   },
   "repository": {
@@ -49,11 +49,13 @@
     "standard-version": "^5.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.5.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "cssnext": "^1.8.4",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.14.1",
     "eslint-config-standard": "^12.0.0",
@@ -62,7 +64,10 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "nodemon": "^1.18.10"
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "parcel-bundler": "^1.12.3",
+    "sass-loader": "^7.1.0"
   },
   "config": {
     "commitizen": {
