@@ -9,18 +9,6 @@ require('babel-core/register')
 require('babel-polyfill')
 // const mongoose = require('mongoose')
 // const router = require('./routes')
-;(async () => {
-  await connect()
-
-  await initAdmin()
-  // require('./tasks/movie')
-  // require('./tasks/api')
-  // require('./tasks/trailer')
-  // require('./tasks/qiniu')
-  const app = new Koa()
-  await useMiddlewares(app)
-  app.listen(3000)
-})()
 
 const useMiddlewares = (app) => {
   R.map(
@@ -33,3 +21,16 @@ const useMiddlewares = (app) => {
     )(MIDDLEWARES)
   )
 }
+
+;(async () => {
+  await connect()
+
+  await initAdmin()
+  // require('./tasks/movie')
+  // require('./tasks/api')
+  // require('./tasks/trailer')
+  // require('./tasks/qiniu')
+  const app = new Koa()
+  await useMiddlewares(app)
+  app.listen(3000)
+})()
