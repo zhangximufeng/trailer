@@ -1,10 +1,10 @@
 const Koa = require('koa')
 // const views = require('koa-views')
-const { resolve } = require('path')
+const { join } = require('path')
 const { connect, initSchemas, initAdmin } = require('./database/init')
 initSchemas()
 const R = require('ramda')
-const MIDDLEWARES = ['router']
+const MIDDLEWARES = ['router', 'parcel']
 require('babel-core/register')
 require('babel-polyfill')
 // const mongoose = require('mongoose')
@@ -17,9 +17,9 @@ const useMiddlewares = (app) => {
         initWith => initWith(app)
       ),
       require,
-      name => resolve(__dirname, `./middlewares/${name}`)
-    )(MIDDLEWARES)
-  )
+      name => join(__dirname, `./middlewares/${name}`)
+    )
+  )(MIDDLEWARES)
 }
 
 ;(async () => {
