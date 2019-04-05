@@ -4,9 +4,10 @@ const { join } = require('path')
 const { connect, initSchemas, initAdmin } = require('./database/init')
 initSchemas()
 const R = require('ramda')
-const MIDDLEWARES = ['router', 'parcel']
 require('babel-core/register')
 require('babel-polyfill')
+const MIDDLEWARES = ['router', 'parcel']
+
 // const mongoose = require('mongoose')
 // const router = require('./routes')
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default (loadComponent, placeholder = '正在加载中') => {
+export default (loadComponent, placeholder = '拼命加载中...') => {
   return class AsyncComponent extends Component {
     unmount = false
 
@@ -24,6 +24,7 @@ export default (loadComponent, placeholder = '正在加载中') => {
         Child
       })
     }
+
     render () {
       const { Child } = this.state
 
